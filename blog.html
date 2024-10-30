@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <!-- Link to Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projet Dev WEB 2A - Page de Blog</title>
+</head>
+
+<body onload="initSlider()">
+    <header>
+        <input type="checkbox" id="menu">
+        <label id="burger" for="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <nav id="sidebarNav" class="justify-align">
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="presentation.html">PRESENTATION</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li id="blog">
+                    <a href="blog.html">BLOG <i class='bx bxs-down-arrow'></i></a>
+                    <ul id="dropdown-menu">
+                        <li id="dropdown-item"><a href="articles/article1.html">Article 1</a></li>
+                        <li id="dropdown-item"><a href="articles/article2.html">Article 2</a></li>
+                        <li id="dropdown-item"><a href="articles/article3.html">Article 3</a></li>
+                        <li id="dropdown-item"><a href="articles/article4.html">Article 4</a></li>
+                        <li id="dropdown-item"><a href="articles/article5.html">Article 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="abonnez-vous.html">ABONNEZ-VOUS</a></li>
+                <li><a href="statistiques.html">STATISTIQUES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-blog">
+        <div class="carousel-inner">
+            <button id="prev-slide" class="slide-button material-symbols-outlined">chevron_left</button>
+            <div class="carousel-item">
+                <img src="img/img1.jpg" alt="image1">
+                <div class="container">
+                    <h2>Hyouka</h2>
+                    <p>Jeune lycéen désabusé, <b class="b-feature-color">Hôtarô Oreki</b> aspire à mener une vie paisible. Sur demande de sa
+                        soeur
+                        aînée et nourrissant l'espoir d'y trouver un havre de paix, <b <b class="b-feature-color">Hôtarô rejoint le club de
+                            littérature</b> classique afin d'empêcher sa dissolution. <br> C'est alors qu'il fait la
+                        connaissance d'<b <b class="b-feature-color">Eru Chitanda</b>, dont la curiosité sans bornes l'amène à enquêter sur de multiples
+                        affaires.</p>
+                    <a href="articles/article1.html" id="btn-container">
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Voir l'Article</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/img2.jpg" alt="image2">
+                <div class="container">
+                    <h2>Classroom of The Elite</h2>
+                    <p>Le lycée <b <b class="b-feature-color">Kōdo Ikusei est considéré comme le meilleur établissement éducatif du Japon</b>, avec
+                        un
+                        taux de 100 % d'admis dans les grandes écoles et l'assurance de trouver l'emploi voulu. Elle
+                        constitue <b <b class="b-feature-color">l'excellence japonaise</b> avec des installations ultramodernes et des équipements
+                        dernier
+                        cri. <br> Dans cet établissement, les points remplacent l'argent et permettent d'acheter tout ce
+                        que
+                        l'on souhaite (nourriture, jeux, consoles…). Dès le premier jour, <b <b class="b-feature-color">chaque élève reçoit 100 000
+                            points</b> valant 100 000 yens au total. À première vue, le lycée Kōdo Ikusei semble être un
+                        véritable paradis, malheureusement, la réalité va vite les rattraper...</p>
+                    <a href="articles/article2.html" id="btn-container">
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Voir l'Article</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/img3.jpg" alt="image3">
+                <div class="container">
+                    <h2>Dandadan</h2>
+                    <p>Deux lycéens sont en désaccord : d'un côté <b class="b-feature-color">Momo Ayase</b> croit aux fantômes mais pas aux
+                        extraterrestres, alors que son camarade <b class="b-feature-color">Ken Takakura</b> croît le contraire. <br> Ils
+                        décident de parier
+                        pour déterminer qui a raison et <b class="b-feature-color">partent visiter des lieux associés à l'occulte et au
+                        surnaturel chacun de leur côté.</b> Ils vont vite découvrir qu'aucun des deux n'a tort et qu'aussi 
+                        bien les extraterrestres que les fantômes existent...</p>
+                    <a href="articles/article3.html" id="btn-container">
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Voir l'Article</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/img4.jpg" alt="image4">
+                <div class="container">
+                    <h2>Les Carnets de l'Apothicaire</h2>
+                    <p>A 17 ans, <b class="b-feature-color">Mao Mao a une vie compliquée</b>. Formée dès son jeune âge par un apothicaire du
+                        quartier des plaisirs, <br> elle se retrouve <b class="b-feature-color">enlevée et vendue comme servante</b> dans le quartier des
+                        femmes du palais impérial ! Entouré de hauts murs, <b class="b-feature-color">il est coupé du monde extérieur.</b>
+                        Afin de survivre dans cette prison de luxe grouillant de complots et de basses manœuvres, 
+                        la jeune fille tente de <b class="b-feature-color">cacher ses connaissances pour se fondre dans la masse.</b></p>
+                    <a href="articles/article4.html" id="btn-container">
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Voir l'Article</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/img5.jpg" alt="image1">
+                <div class="container">
+                    <h2>Jojo's Bizarre Adventure</h2>
+                    <p>En Angleterre, dans les années 1880, <b class="b-feature-color">Jonathan, fils unique de la famille aristocrate Joestar</b>,
+                        s'efforce de devenir un gentleman accompli.<br> Son quotidien est bouleversé par l'adoption de
+                        <b class="b-feature-color">Dio Brando</b>, un jeune homme mystérieux du même âge. Mais Dio est <b class="b-feature-color">fourbe, ambitieux et 
+                        sans scrupule</b> : il fera tout pour s’emparer de la fortune des Joestar et détruire la vie de Jonathan.
+                    </p>
+                    <a href="articles/article5.html" id="btn-container">
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Voir l'Article</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <button id="next-slide" class="slide-button material-symbols-outlined">chevron_right</button>
+        </div>
+    </main>
+    <footer>
+        <section id="footer-container">
+            <section>
+                <nav>
+                    <h2>Contact Informations</h2>
+                    <ul>
+                        <li><b>Numéro :</b> (712) 362-7297</li>
+                        <li><b>Code Postal :</b> 6072</li>
+                        <li><b>Email :</b> nisl.arcu@hotmail.org</li>
+                        <li><b>Adresse :</b> 6866 Pede, Street</li>
+                        <li><b>Région :</b> Donetsk oblast</li>
+                        <li><b>Pays :</b> Turkey</li>
+                        <li class="link"><a href="contact.html">Accédez à plus d'Infos</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h2>Nos Derniers Articles</h2>
+                    <div>
+                        <article>
+                            <img src="img/img1.jpg" alt="dernierarticle1">
+                            <h3>Hyouka</h3>
+                        </article>
+                        <article>
+                            <img src="img/img2.jpg" alt="dernierarticle2">
+                            <h3>Classroom of The Elite</h3>
+                        </article>
+                        <article>
+                            <img src="img/img3.jpg" alt="dernierarticle3">
+                            <h3>Dandadan</h3>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <p>&copy; Copyright 2A Année 2024 - 2025</p>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-reddit'></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <button id="scroll-top" onclick="scrollToTop()">
+        <i class="bx bxs-up-arrow"></i>
+    </button>
+    <script src="js/script.js"></script>
+</body>
+</html>
