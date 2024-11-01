@@ -1226,6 +1226,10 @@ input[data-autocompleted] {
         z-index: 1000;
     }
 
+    #menu:checked~#burger{
+        position: fixed;
+    }
+
     #menu:checked~#burger>span {
         background-color: var(--font-color);
     }
@@ -1259,6 +1263,11 @@ input[data-autocompleted] {
         font-size: 20px;
         color: var(--primary-color);
         transition: all 0.3s ease-in-out;
+    }
+
+    #blog:hover>#dropdown-menu,
+    #blog i{
+        display: none;
     }
 
     #container>#disposition{
