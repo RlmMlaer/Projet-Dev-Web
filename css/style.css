@@ -384,8 +384,9 @@ aside>ul>li>a>img {
 }
 
 #main-classique>section>ul>li:nth-child(1) {
+    display: flex;
     gap: 0px;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     list-style: none !important;
 }
 
@@ -1078,6 +1079,7 @@ input[data-autocompleted] {
     }
 
     #main-accueil,
+    #main-classique,
     aside,
     aside>ul{
         width: 100% !important;
@@ -1226,8 +1228,27 @@ input[data-autocompleted] {
     }
 
     #container>#banniere>div>p,
-    #main-accueil>section>div>p{
-        font-size: .9rem;
+    #main-accueil>section>div>p,
+    #main-classique>section>p,
+    #main-classique>#informations>p,
+    #main-classique>blockquote,
+    #main-classique>section>ul>li{
+        font-size: .9rem !important;
+    }
+
+    #main-classique>section>.reference>img{
+        height: 300px;
+        object-position: center;
+    }
+
+    #main-classique>section>.reference>.legende{
+        font-size: .7rem;
+    }
+
+    #main-classique>#informations, 
+    #main-classique>section,
+    #main-classique>section>ul{
+        gap: 15px;
     }
 
     #main-accueil>section>a{
@@ -1251,7 +1272,7 @@ input[data-autocompleted] {
 
 @media screen and (max-width: 600px){
     #main-accueil{
-        gap: 0;
+        gap: 10px;
     }
 
     #main-accueil>section,
