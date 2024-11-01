@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,14 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Projet Dev WEB 2A - Page Article 2</title>
 </head>
+
 <body>
     <header>
         <input type="checkbox" id="menu">
         <label id="burger" for="menu">
-            <div></div>
-            <div></div>
-            <div></div>
+            <span></span>
+            <span></span>
+            <span></span>
         </label>
         <nav id="sidebarNav" class="justify-align">
             <ul>
@@ -26,11 +28,11 @@
                 <li id="blog">
                     <a href="../blog.html">BLOG <i class='bx bxs-down-arrow'></i></a>
                     <ul id="dropdown-menu">
-                        <li id="dropdown-item"><a href="article1.html">Article 1</a></li>
-                        <li id="dropdown-item"><a href="article2.html">Article 2</a></li>
-                        <li id="dropdown-item"><a href="article3.html">Article 3</a></li>
-                        <li id="dropdown-item"><a href="article4.html">Article 4</a></li>
-                        <li id="dropdown-item"><a href="article5.html">Article 5</a></li>
+                        <li class="dropdown-item"><a href="article1.html">Hyouka</a></li>
+                        <li class="dropdown-item"><a href="article2.html">Classroom of The Elite</a></li>
+                        <li class="dropdown-item"><a href="article3.html">Dandadan</a></li>
+                        <li class="dropdown-item"><a href="article4.html">Les Carnets de l'Apothicaire</a></li>
+                        <li class="dropdown-item"><a href="article5.html">Jojo's Bizarre Adventure</a></li>
                     </ul>
                 </li>
                 <li><a href="../abonnez-vous.html">ABONNEZ-VOUS</a></li>
@@ -38,21 +40,182 @@
             </ul>
         </nav>
     </header>
-    <section id="container">
+    <div id="container">
         <section id="banniere" style="background-image: url('../img/banniere-article2.jpg');">
             <div>
                 <h2>CLASSROOM OF THE ELITE</h2>
-                <p>Multiple lines of text that form the lede, informing new readers quickly and
-                    efficiently about what’s most interesting in this post’s contents.</p>
+                <p>Classroom of The Elite est une série de light novel japonais écrite par Shōgo Kinugasa et illustrée
+                    par Shunsaku Tomose.
+                    Media Factory a publié vingt-deux volumes depuis 2015 dans leur collection MF Bunko J. En France, la
+                    série est éditée par
+                    les Éditions Mahô</p>
             </div>
         </section>
-        <section id="disposition">
+        <div id="disposition">
             <main id="main-classique" class="width-66">
+                <blockquote>
+                    <h2>Auteur</h2>
+                    <div>
+                        <img src="../img/auteur2.png" alt="auteur2">
+                        <div>
+                            <ul>
+                                <li><b>Nom </b>: Kinugasa Shougo</li>
+                                <li><b>Nationalité </b>: Japonaise</li>
+                                <li><b>Genre </b>: Homme</li>
+                                <li><b>Date de Naissance </b>: 1978</li>
+                                <li><b>Statut </b>: En activité</li>
+                                <li><b>Début </b>: 2012</li>
+                            </ul>
+                            <cite>
+                                Shōgo Kinugasa (衣きぬ笠がさ 彰しょう梧ご, Kinugasa Shōgo) est un scénariste et auteur japonais. Né
+                                en novembre, il serait principalement basé à Fukuoka. Il est actuellement en charge de
+                                l'oeuvre « Classroom of the Elite ».</cite>
+                        </div>
+                    </div>
+                </blockquote>
                 <section>
                     <h2>Synopsis</h2>
+                    <p>L'histoire prend place dans le lycée Kōdo Ikusei, une école prestigieuse dotée d'installations
+                        ultramodernes où 100% des étudiants vont ensuite à l'université ou entrent dans la vie active.
+                        Les élèves ont une liberté totale, ils peuvent avoir la coupe de cheveux qu'ils désirent et
+                        apporter n'importe quel bien personnel dans l'établissement. Kōdo Ikusei est comme le paradis,
+                        mais seulement en apparence, en effet seulement les étudiants avec de bons résultats reçoivent
+                        ce genre de traitement.</p>
+                    <p>Dans cette école, chaque mois, selon les notes et le comportement d'une classe, celle-ci se voit
+                        attribuer un nombre de points en conséquence. Ces points permettent l'achat en tout genre au
+                        sein de l'école (nourriture, jeux, consoles, ...). De plus chaque groupe est classé en fonction
+                        du nombre de points reçus.</p>
+                    <p>Kiyotaka Ayanokōji est un élève de la classe D, regroupant les pires élèves de l'établissement,
+                        ceux avec les résultats les plus mauvais. Pour une certaine raison, Kiyotaka a été négligent
+                        durant les examens d'entrée et a donc été placé dans cette fameuse classe.</p>
+                    <p>Après avoir rencontré Suzune Horikita et Kikyō Kushida, deux élèves de sa classe, Kiyotaka
+                        Ayanokōji et ses nouvelles camarades décident ensemble de coopérer afin d'améliorer les notes de
+                        leur classe et essayeront d'atteindre les classes supérieures</p>
                 </section>
-                <section>
+                <section id="article-section-personnage">
                     <h2>Personnages Principaux</h2>
+                    <div class="article-div-personnage">
+                        <img src="../img/classroom-personnage-1.jpg" alt="classroom-personnage-1">
+                        <p> <b class="b-feature-color">Kiyotaka Ayanokōji (綾小路 清隆あやのこうじ きよたか)</b> <br>
+                            <b>Voix japonaise</b> : Shōya Chiba
+                        </p>
+                        <p>
+                            Le protagoniste et le narrateur incertain de l'œuvre. Il a négligé son examen d'entrée pour
+                            une
+                            certaine raison et finit dans la classe D, symbole d'échec où tous les rebuts de l'école
+                            sont
+                            assignés. Kiyotaka Ayanokōji est un garçon sans motivation qui n'est pas bon pour
+                            communiquer
+                            avec les autres. Il échoue souvent à tenter de devenir ami avec les autres de sa classe en
+                            raison de son incapacité à communiquer. Sa situation commence à changer après avoir
+                            rencontré
+                            Suzune Horikita et Kikyō Kushida, deux autres étudiantes de sa classe. Il a promis d'aider
+                            Suzune à atteindre la classe A, à condition qu'elle n'enquête pas sur lui. Il semble en
+                            effet
+                            avoir un passé sombre dont il ne veut pas parler. Leur professeure principale Saeda
+                            Chabashira
+                            s'intéresse d'ailleurs à ce dernier. Ses notes sont dans la moyenne et il a conscience de la
+                            façon dont il dépense ses points. Cependant il semble que ses notes soient souvent bien en
+                            dessous de ses capacités réelles. Comme le fait remarquer Manabu Horikita, il vise un score
+                            de
+                            50 sur 100 à toutes les épreuves lors de l'examen d'admission. De plus Suzune remarque
+                            rapidement que son intellect et son physique sont largement supérieurs à la moyenne. Mais
+                            pour
+                            une raison inconnue, il évite de se mettre en avant et attribue souvent aux autres ses
+                            mérites.
+                        </p>
+                    </div>
+                    <div class="article-div-personnage">
+                        <img src="../img/classroom-personnage-2.jpg" alt="classroom-personnage-2">
+                        <p>
+                            <b class="b-feature-color">Suzune Horikita (堀北 鈴音)</b> <br>
+                            <b>Voix japonaise</b> : Akari Kitō
+                        </p>
+                        <p>
+                            Une élève distante qui est la petite sœur du président du BDE, Manabu. Assise à côté de
+                            Kiyotaka
+                            en classe, elle prend également soin de la façon dont elle dépense ses points. C'est une
+                            beauté
+                            qui excelle dans les études et le sport, mais tout comme Kiyotaka, elle a du mal à
+                            communiquer
+                            avec les autres. Or, contrairement à lui, cela est dû à sa forte personnalité qui fait que
+                            ses
+                            paroles sont assez dures par moments. Les résultats qu'elle a obtenus lors de cette année
+                            font
+                            d'elle l'une des meilleures élèves de sa génération.
+                        </p>
+                    </div>
+                    <div class="article-div-personnage">
+                        <img src="../img/classroom-personnage-3.jpg" alt="classroom-personnage-3">
+                        <p> <b class="b-feature-color"> Kikyō Kushida (櫛田 桔梗)</b> <br>
+                            <b>Voix japonaise</b> : Yurika Kubo
+                        </p>
+                        <p>
+                            Une bishōjo considérée comme une ange attirant l'attention à la fois des filles et des
+                            garçons,
+                            elle est bien sûr la plus populaire de la classe. Peu importe la situation et l'ambiance,
+                            elle
+                            est enjouée et cherche à devenir amie avec tout le monde à l'école. Cependant, sa
+                            personnalité
+                            réelle est assez horrible, ayant menacé Ayanokōji de l'accuser de viol en cas de révélation.
+                            Malgré cela, elle préfère continuer sa comédie de bonne fille.
+                        </p>
+                    </div>
+                    <div class="article-div-personnage">
+                        <img src="../img/classroom-personnage-4.jpg" alt="classroom-personnage-4">
+                        <p> <b class="b-feature-color">Kakeru Ryūen (龍園 翔)</b> <br>
+                            <b>Voix japonaise</b> : Masaaki Mizunaka
+                        </p>
+                        <p>
+                            Un élève et le leader de la classe C. Contrairement à Yōsuke et Honami qui ont rassemblé la
+                            confiance de leur classe et sont devenus des leaders, Kakeru l'est devenu par la force. Il
+                            est
+                            d'une personnalité assez tyrannique.
+                        </p>
+                    </div>
+                    <div class="article-div-personnage">
+                        <img src="../img/classroom-personnage-5.jpg" alt="classroom-personnage-5">
+                        <p>
+                            <b class="b-feature-color">Honami Ichinose (一之瀬 帆波)</b> <br>
+                            <b>Voix japonaise</b> : Nao Tōyama
+                        </p>
+                        <p>
+                            Une bishōjo à la chevelure rose clair. Possédant un sens fort de la justice et très
+                            intelligente, elle est la leader de la classe B qui peut s’adresser aisément avec n'importe
+                            qui.
+                            Et, à première vue, elle semble être très aimable et elle a beaucoup d'amis au lycée.
+                        </p>
+                    </div>
+                    <div class="article-div-personnage">
+                        <img src="../img/classroom-personnage-6.jpg" alt="classroom-personnage-6">
+                        <p> <b class="b-feature-color">Arisu Sakayanagi (坂柳 有栖)</b> <br>
+                            <b>Voix japonaise</b> : Rina Hidaka
+                        </p>
+                        <p>
+                            Elle n'apparaît qu'à partir du 5e volume de l'œuvre. Elle est le leader principal de la
+                            classe
+                            A. C'est une fille très intelligente, car elle semble avoir une très bonne connaissance du
+                            règlement de l'école, aussi elle souffre de handicap l'obligeant à marcher à l'aide d'une
+                            canne.
+                            Elle se dispute le leadership de la classe avec Kōhei Katsuragi. Si elle se conduit de
+                            manière
+                            douce, elle préfère tout de même employer des moyens agressifs. Elle semble connaître
+                            Kiyotaka
+                            avant leurs admission dans l'école pour certaines circonstances.
+                        </p>
+                    </div>
+                    <div class="article-div-personnage">
+                        <img src="../img/classroom-personnage-7.jpg" alt="classroom-personnage-7">
+                        <p> <b class="b-feature-color">Manabu Horikita (堀北 学)</b> <br>
+                            <b>Voix japonaise</b> : Yūichirō Umehara
+                        </p>
+                        <p>
+                            Un élève de la classe terminale A, il est le président du bureau des étudiants (BDE). Il est
+                            le
+                            grand-frère de Suzune Horikita. Il n'est pas rare que les étudiants aient une impression
+                            effrayante de lui. Il montre un fort intérêt pour Kiyotaka.
+                        </p>
+                    </div>
                 </section>
                 <section>
                     <h2>Opening</h2>
@@ -70,10 +233,88 @@
                 </section>
             </main>
             <aside class="width-33">
+                <div id="aside-infos-oeuvre">
+                    <section>
+                        <h3 class="aside-infos-title">CLASSROOM OF THE ELITE</h3>
+                        <img src="../img/classroom-logo.png" alt="classroom-logo">
+                        <div>
+                            <ul class="aside-categories-part">
+                                <li>Genres</li>
+                                <li>Thèmes</li>
+                            </ul>
+                            <ul class="aside-infos-part">
+                                <li>Drame, Psychologique</li>
+                                <li>École, Quotidien</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="aside-infos-title">Light Novel</h3>
+                        <div>
+                            <ul class="aside-categories-part">
+                                <li>Auteur</li>
+                                <li>Illustrateur</li>
+                                <li>Éditeur</li>
+                                <li>Sortie Initiale</li>
+                                <li>Volumes</li>
+                            </ul>
+                            <ul class="aside-infos-part">
+                                <li>Shōgo Kinugasa</li>
+                                <li>Shunsaku Tomose</li>
+                                <li>Media Factory</li>
+                                <li>25 mars 2015</li>
+                                <li>28</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="aside-infos-title">Manga</h3>
+                        <div>
+                            <ul class="aside-categories-part">
+                                <li>Catégories</li>
+                                <li>Auteur</li>
+                                <li>Éditeur</li>
+                                <li>Prépublication</li>
+                                <li>Sortie Initiale</li>
+                                <li>Volumes</li>
+                            </ul>
+                            <ul class="aside-infos-part">
+                                <li>Shōnen</li>
+                                <li>Yuyu Ichino</li>
+                                <li>Media Factory</li>
+                                <li>Monthly Comic Alive</li>
+                                <li>27 janvier 2016</li>
+                                <li>17</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="aside-infos-title">Anime</h3>
+                        <div>
+                            <ul class="aside-categories-part">
+                                <li>Réalisateur</li>
+                                <li>Scénariste</li>
+                                <li>Studio d'Animation</li>
+                                <li>Compositeur</li>
+                                <li>1re diffusion</li>
+                                <li>Épisodes</li>
+                            </ul>
+                            <ul class="aside-infos-part">
+                                <li>Hiroyuki Hashimoto</li>
+                                <li>Aoi Akashiro</li>
+                                <li>Lerche</li>
+                                <li>Ryō Takahashi</li>
+                                <li>12 juillet 2017</li>
+                                <li>38</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
                 <h2>Nouveautés</h2>
                 <ul>
                     <li>
-                        <a href="https://www.crunchyroll.com/fr/news/latest/2024/10/28/tower-of-god-saison-2-episode-17-casting-quatre-personnages">
+                        <a
+                            href="https://www.crunchyroll.com/fr/news/latest/2024/10/28/tower-of-god-saison-2-episode-17-casting-quatre-personnages">
                             <img src="../img/articlesecondaire1.jpg" alt="article_secondaire_1">
                             <div>
                                 <p>Tower of God Saison 2 : Quatre nouveaux personnages annoncés pour l'épisode 17</p>
@@ -82,7 +323,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.crunchyroll.com/fr/news/latest/2024/10/21/one-piece-log-fish-man-island-saga-repousse-world-series-baseball">
+                        <a
+                            href="https://www.crunchyroll.com/fr/news/latest/2024/10/21/one-piece-log-fish-man-island-saga-repousse-world-series-baseball">
                             <img src="../img/articlesecondaire2.jpg" alt="article_secondaire_2">
                             <div>
                                 <p>One Piece Log: Fish-Man Island Saga : Diffusion repoussée d'une semaine</p>
@@ -91,7 +333,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.crunchyroll.com/fr/news/latest/2024/10/8/one-piece-25eme-anniversaire-pop-up-shop-paris">
+                        <a
+                            href="https://www.crunchyroll.com/fr/news/latest/2024/10/8/one-piece-25eme-anniversaire-pop-up-shop-paris">
                             <img src="../img/articlesecondaire3.jpg" alt="article_secondaire_3">
                             <div>
                                 <p>One Piece : Un Pop-up Shop à <br> Paris pour les 25 ans de l'anime</p>
@@ -100,7 +343,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.crunchyroll.com/fr/news/latest/2024/10/23/les-carnets-de-lapothicaire-saison-2-date-diffusion-trailer-visuel-halloween">
+                        <a
+                            href="https://www.crunchyroll.com/fr/news/latest/2024/10/23/les-carnets-de-lapothicaire-saison-2-date-diffusion-trailer-visuel-halloween">
                             <img src="../img/articlesecondaire4.jpg" alt="article_secondaire_4">
                             <div>
                                 <p>Les Carnets de l'apothicaire Saison 2 : Diffusion le 10 janvier 2025</p>
@@ -109,7 +353,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.crunchyroll.com/fr/news/announcements/2024/10/19/the-beginning-after-the-end-adaptation-anime-crunchyroll-2025">
+                        <a
+                            href="https://www.crunchyroll.com/fr/news/announcements/2024/10/19/the-beginning-after-the-end-adaptation-anime-crunchyroll-2025">
                             <img src="../img/articlesecondaire5.jpg" alt="article_secondaire_4">
                             <div>
                                 <p>The Beginning After the End : L'anime sera sur diffusé sur Crunchyroll en 2025</p>
@@ -119,11 +364,11 @@
                     </li>
                 </ul>
             </aside>
-        </section>
-    </section>
+        </div>
+    </div>
     <footer>
         <section id="footer-container">
-            <section>
+            <div id="upper-footer-part">
                 <nav>
                     <h2>Contact Informations</h2>
                     <ul>
@@ -140,21 +385,27 @@
                     <h2>Nos Derniers Articles</h2>
                     <div>
                         <article>
-                            <img src="../img/img1.jpg" alt="dernierarticle1">
-                            <h3>Hyouka</h3>
+                            <a href="article1.html">
+                                <img src="../img/img1.jpg" alt="dernierarticle1">
+                                <h3>Hyouka</h3>
+                            </a>
                         </article>
                         <article>
-                            <img src="../img/img2.jpg" alt="dernierarticle2">
-                            <h3>Classroom of The Elite</h3>
+                            <a href="article2.html">
+                                <img src="../img/img2.jpg" alt="dernierarticle2">
+                                <h3>Classroom of The Elite</h3>
+                            </a>
                         </article>
                         <article>
-                            <img src="../img/img3.jpg" alt="dernierarticle3">
-                            <h3>Dandadan</h3>
+                            <a href="article3.html">
+                                <img src="../img/img3.jpg" alt="dernierarticle3">
+                                <h3>Dandadan</h3>
+                            </a>
                         </article>
                     </div>
                 </div>
-            </section>
-            <div>
+            </div>
+            <div id="lower-footer-part">
                 <p>&copy; Copyright 2A Année 2024 - 2025</p>
                 <ul>
                     <li><a href="#"><i class='bx bxl-twitter'></i></a></li>

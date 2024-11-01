@@ -16,9 +16,9 @@
     <header>
         <input type="checkbox" id="menu">
         <label id="burger" for="menu">
-            <div></div>
-            <div></div>
-            <div></div>
+            <span></span>
+            <span></span>
+            <span></span>
         </label>
         <nav id="sidebarNav" class="justify-align">
             <ul>
@@ -28,11 +28,11 @@
                 <li id="blog">
                     <a href="blog.html">BLOG <i class='bx bxs-down-arrow'></i></a>
                     <ul id="dropdown-menu">
-                        <li id="dropdown-item"><a href="articles/article1.html">Article 1</a></li>
-                        <li id="dropdown-item"><a href="articles/article2.html">Article 2</a></li>
-                        <li id="dropdown-item"><a href="articles/article3.html">Article 3</a></li>
-                        <li id="dropdown-item"><a href="articles/article4.html">Article 4</a></li>
-                        <li id="dropdown-item"><a href="articles/article5.html">Article 5</a></li>
+                        <li class="dropdown-item"><a href="articles/article1.html">Hyouka</a></li>
+                        <li class="dropdown-item"><a href="articles/article2.html">Classroom of The Elite</a></li>
+                        <li class="dropdown-item"><a href="articles/article3.html">Dandadan</a></li>
+                        <li class="dropdown-item"><a href="articles/article4.html">Les Carnets de l'Apothicaire</a></li>
+                        <li class="dropdown-item"><a href="articles/article5.html">Jojo's Bizarre Adventure</a></li>
                     </ul>
                 </li>
                 <li><a href="abonnez-vous.html">ABONNEZ-VOUS</a></li>
@@ -40,7 +40,7 @@
             </ul>
         </nav>
     </header>
-    <section id="container">
+    <div id="container">
         <section id="banniere" style="background-image:url('img/banniere.gif');">
             <div>
                 <h2>Projet Dev.Web : Créer un blog</h2>
@@ -48,20 +48,22 @@
                     Il regroupe toutes les étapes des TP et les attendus, avec le thème personnel des animes/mangas.</p>
             </div>
         </section>
-        <section id="disposition">
+        <div id="disposition">
             <main id="main-accueil" class="width-66">
                 <h2>Oeuvres à la Une</h2>
                 <section>
                     <a href="articles/article1.html">
                         <img src="img/img1.jpg" alt="image1">
-                        <p>Voir l'article</p>
+                        <div class="overlay-article-text">
+                            <p>Voir l'article</p>
+                        </div>
                     </a>
                     <div>
                         <h3>Hyouka</h3>
                         <p>Jeune lycéen désabusé, <b class="b-feature-color">Hôtarô Oreki</b> aspire à mener une vie paisible. Sur demande de sa
                             soeur
                             aînée et nourrissant l'espoir d'y trouver un havre de paix, <b class="b-feature-color">Hôtarô rejoint le club de
-                                littérature</b> classique afin d'empêcher sa dissolution. <br> C'est alors qu'il fait la
+                                littérature</b> classique afin d'empêcher sa dissolution. C'est alors qu'il fait la
                             connaissance d'<b class="b-feature-color">Eru Chitanda</b>, dont la curiosité sans bornes l'amène à enquêter sur de
                             multiples
                             affaires.</p>
@@ -70,26 +72,30 @@
                 <section>
                     <a href="articles/article2.html">
                         <img src="img/img2.jpg" alt="image2">
-                        <p>Voir l'article</p>
+                        <div class="overlay-article-text">
+                            <p>Voir l'article</p>
+                        </div>
                     </a>
                     <div>
                         <h3>Classroom of The Elite</h3>
                         <p>Le lycée <b class="b-feature-color">Kōdo Ikusei est considéré comme le meilleur établissement éducatif du Japon</b>,
                             avec un taux de 100 % d'admis dans les grandes écoles et l'assurance de trouver l'emploi voulu. Elle
                             constitue <b class="b-feature-color">l'excellence japonaise</b> avec des installations ultramodernes et des
-                            équipements dernier cri. <br> Dans cet établissement, les points remplacent l'argent et permettent d'acheter tout ce que
+                            équipements dernier cri. Dans cet établissement, les points remplacent l'argent et permettent d'acheter tout ce que
                             l'on souhaite (nourriture, jeux, consoles…).</p>
                     </div>
                 </section>
                 <section>
                     <a href="articles/article3.html">
                         <img src="img/img3.jpg" alt="image3">
-                        <p>Voir l'article</p>
+                        <div class="overlay-article-text">
+                            <p>Voir l'article</p>
+                        </div>
                     </a>
                     <div>
                         <h3>Dandadan</h3>
                         <p>Deux lycéens sont en désaccord : d'un côté <b class="b-feature-color">Momo Ayase</b> croit aux fantômes mais pas aux
-                            extraterrestres, alors que son camarade <b class="b-feature-color">Ken Takakura</b> croît le contraire. <br> Ils
+                            extraterrestres, alors que son camarade <b class="b-feature-color">Ken Takakura</b> croît le contraire. Ils
                             décident de parier pour déterminer qui a raison et <b class="b-feature-color">partent visiter des lieux associés à l'occulte
                             et au surnaturel chacun de leur côté.</b> Ils vont vite découvrir qu'aucun des deux n'a tort et qu'aussi
                             bien les extraterrestres que les fantômes existent...</p>
@@ -98,12 +104,14 @@
                 <section>
                     <a href="articles/article4.html">
                         <img src="img/img4.jpg" alt="image4">
-                        <p>Voir l'article</p>
+                        <div class="overlay-article-text">
+                            <p>Voir l'article</p>
+                        </div>
                     </a>
                     <div>
                         <h3>Les Carnets de l'Apothicaire</h3>
                         <p>A 17 ans, <b class="b-feature-color">Mao Mao a une vie compliquée</b>. Formée dès son jeune âge par un apothicaire du
-                            quartier des plaisirs, <br> elle se retrouve <b class="b-feature-color">enlevée et vendue comme servante</b> dans le
+                            quartier des plaisirs, elle se retrouve <b class="b-feature-color">enlevée et vendue comme servante</b> dans le
                             quartier des femmes du palais impérial ! Entouré de hauts murs, <b class="b-feature-color">
                             il est coupé du monde extérieur.</b> Afin de survivre dans cette prison de luxe grouillant de complots et de basses manœuvres,
                             la jeune fille tente de <b class="b-feature-color">cacher ses connaissances pour se fondre dans la masse.</b></p>
@@ -112,29 +120,32 @@
                 <section>
                     <a href="articles/article5.html">
                         <img src="img/img5.jpg" alt="image5">
-                        <p>Voir l'article</p>
+                        <div class="overlay-article-text">
+                            <p>Voir l'article</p>
+                        </div>
                     </a>
                     <div>
                         <h3>Jojo's Bizarre Adventure</h3>
                         <p>En Angleterre, dans les années 1880, <b class="b-feature-color">Jonathan, fils unique de la famille aristocrate Joestar</b>,
-                            s'efforce de devenir un gentleman accompli.<br> Son quotidien est bouleversé par l'adoption de
+                            s'efforce de devenir un gentleman accompli. Son quotidien est bouleversé par l'adoption de
                             <b class="b-feature-color">Dio Brando</b>, un jeune homme mystérieux du même âge. Mais Dio est <b class="b-feature-color">fourbe, ambitieux
                             et sans scrupule</b> : il fera tout pour s’emparer de la fortune des Joestar et détruire la
                             vie de Jonathan.
-                        </p>
                         </p>
                     </div>
                 </section>
                 <section>
                     <a href="#">
                         <img src="img/img6.jpg" alt="image6">
-                        <p>Voir l'article</p>
+                        <div class="overlay-article-text">
+                            <p>Voir l'article</p>
+                        </div>
                     </a>
                     <div>
                         <h3>Tsuki Ga Kirei</h3>
                         <p>Les années collège dans la ville de Kawagoe ! <b class="b-feature-color">Kôtarô</b> travaille dans une librairie et
                             il aimerait devenir écrivain. <b class="b-feature-color">Akane</b> est une jeune fille pleine d'énergie qui adore
-                            courir. <br> Ils se retrouvent <b class="b-feature-color">tous les deux dans la même classe</b> et doivent 
+                            courir. Ils se retrouvent <b class="b-feature-color">tous les deux dans la même classe</b> et doivent 
                             s'occuper deséquipements d'un festival de sport. Une relation naît doucement, malgré leurs caractères opposés, notamment à
                             travers <b class="b-feature-color">les nombreux échanges</b> qu’ils ont sur LINE, un logiciel de discussion.</p>
                     </div>
@@ -142,13 +153,15 @@
                 <section>
                     <a href="#">
                         <img src="img/img7.jpg" alt="image7">
-                        <p>Voir l'article</p>
+                        <div class="overlay-article-text">
+                            <p>Voir l'article</p>
+                        </div>
                     </a>
                     <div>
                         <h3>Blue Lock</h3>
                         <p>Coupe du monde 2018, le <b class="b-feature-color">Japon est éliminée en huitièmes de finale.</b>
                             Ce nouvel échec incite l'Union japonaise de football à fonder le "Blue Lock" : un centre de
-                            formation <b class="b-feature-color">rassemblant les 300 meilleurs attaquants lycéens du pays.</b> L'objectif  d'Ego Jinpachi ? <br>
+                            formation <b class="b-feature-color">rassemblant les 300 meilleurs attaquants lycéens du pays.</b> L'objectif  d'Ego Jinpachi ?
                             Détecter l'attaquant qui écrasera tous ses rivaux par son talent et son individualisme. Si <b class="b-feature-color">Yoichi Isagi</b> veut 
                             survivre au programme, il devra abandonner le jeu collectif pour devenir l'attaquant ultime </p>
                     </div>
@@ -204,11 +217,11 @@
                     </li>
                 </ul>
             </aside>
-        </section>
-    </section>
+        </div>
+    </div>
     <footer>
         <section id="footer-container">
-            <section>
+            <div id="upper-footer-part">
                 <nav>
                     <h2>Contact Informations</h2>
                     <ul>
@@ -225,21 +238,27 @@
                     <h2>Nos Derniers Articles</h2>
                     <div>
                         <article>
-                            <img src="img/img1.jpg" alt="dernierarticle1">
-                            <h3>Hyouka</h3>
+                            <a href="articles/article1.html">
+                                <img src="../img/img1.jpg" alt="dernierarticle1">
+                                <h3>Hyouka</h3>
+                            </a>
                         </article>
                         <article>
-                            <img src="img/img2.jpg" alt="dernierarticle2">
-                            <h3>Classroom of The Elite</h3>
+                            <a href="articles/article2.html">
+                                <img src="../img/img2.jpg" alt="dernierarticle2">
+                                <h3>Classroom of The Elite</h3>
+                            </a>
                         </article>
                         <article>
-                            <img src="img/img3.jpg" alt="dernierarticle3">
-                            <h3>Dandadan</h3>
+                            <a href="articles/article3.html">
+                                <img src="../img/img3.jpg" alt="dernierarticle3">
+                                <h3>Dandadan</h3>
+                            </a>
                         </article>
                     </div>
                 </div>
-            </section>
-            <div>
+            </div>
+            <div id="lower-footer-part">
                 <p>&copy; Copyright 2A Année 2024 - 2025</p>
                 <ul>
                     <li><a href="#"><i class='bx bxl-twitter'></i></a></li>

@@ -16,9 +16,9 @@
     <header>
         <input type="checkbox" id="menu">
         <label id="burger" for="menu">
-            <div></div>
-            <div></div>
-            <div></div>
+            <span></span>
+            <span></span>
+            <span></span>
         </label>
         <nav id="sidebarNav" class="justify-align">
             <ul>
@@ -28,11 +28,11 @@
                 <li id="blog">
                     <a href="blog.html">BLOG <i class='bx bxs-down-arrow'></i></a>
                     <ul id="dropdown-menu">
-                        <li id="dropdown-item"><a href="articles/article1.html">Article 1</a></li>
-                        <li id="dropdown-item"><a href="articles/article2.html">Article 2</a></li>
-                        <li id="dropdown-item"><a href="articles/article3.html">Article 3</a></li>
-                        <li id="dropdown-item"><a href="articles/article4.html">Article 4</a></li>
-                        <li id="dropdown-item"><a href="articles/article5.html">Article 5</a></li>
+                        <li class="dropdown-item"><a href="articles/article1.html">Hyouka</a></li>
+                        <li class="dropdown-item"><a href="articles/article2.html">Classroom of The Elite</a></li>
+                        <li class="dropdown-item"><a href="articles/article3.html">Dandadan</a></li>
+                        <li class="dropdown-item"><a href="articles/article4.html">Les Carnets de l'Apothicaire</a></li>
+                        <li class="dropdown-item"><a href="articles/article5.html">Jojo's Bizarre Adventure</a></li>
                     </ul>
                 </li>
                 <li><a href="abonnez-vous.html">ABONNEZ-VOUS</a></li>
@@ -40,15 +40,15 @@
             </ul>
         </nav>
     </header>
-    <section id="container">
+    <div id="container">
         <section id="banniere" style="background-image: url('img/banniere-statistiques.gif');">
             <div>
-                <h2>Chiffres des studios d'animations</h2>
+                <h2>Stats des studios d'animations</h2>
                 <p>Vous souhaitez vous renseigner sur un studio d'animation ? Découvrer les gros noms de l'industrie japonaise qui se cache
                     dernière les oeuvres les plus populaires !</p>
             </div>
         </section>
-        <section id="disposition">
+        <div id="disposition">
             <main id="main-classique" class="width-66">
                 <section>
                     <h2>Studio Mappa</h2>
@@ -296,11 +296,11 @@
                     </li>
                 </ul>
             </aside>
-        </section>
-    </section>
+        </div>
+    </div>
     <footer>
         <section id="footer-container">
-            <section>
+            <div id="upper-footer-part">
                 <nav>
                     <h2>Contact Informations</h2>
                     <ul>
@@ -317,21 +317,27 @@
                     <h2>Nos Derniers Articles</h2>
                     <div>
                         <article>
-                            <img src="img/img1.jpg" alt="dernierarticle1">
-                            <h3>Hyouka</h3>
+                            <a href="articles/article1.html">
+                                <img src="../img/img1.jpg" alt="dernierarticle1">
+                                <h3>Hyouka</h3>
+                            </a>
                         </article>
                         <article>
-                            <img src="img/img2.jpg" alt="dernierarticle2">
-                            <h3>Classroom of The Elite</h3>
+                            <a href="articles/article2.html">
+                                <img src="../img/img2.jpg" alt="dernierarticle2">
+                                <h3>Classroom of The Elite</h3>
+                            </a>
                         </article>
                         <article>
-                            <img src="img/img3.jpg" alt="dernierarticle3">
-                            <h3>Dandadan</h3>
+                            <a href="articles/article3.html">
+                                <img src="../img/img3.jpg" alt="dernierarticle3">
+                                <h3>Dandadan</h3>
+                            </a>
                         </article>
                     </div>
                 </div>
-            </section>
-            <div>
+            </div>
+            <div id="lower-footer-part">
                 <p>&copy; Copyright 2A Année 2024 - 2025</p>
                 <ul>
                     <li><a href="#"><i class='bx bxl-twitter'></i></a></li>

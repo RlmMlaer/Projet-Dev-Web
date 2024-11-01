@@ -16,9 +16,9 @@
     <header>
         <input type="checkbox" id="menu">
         <label id="burger" for="menu">
-            <div></div>
-            <div></div>
-            <div></div>
+            <span></span>
+            <span></span>
+            <span></span>
         </label>
         <nav id="sidebarNav" class="justify-align">
             <ul>
@@ -28,11 +28,11 @@
                 <li id="blog">
                     <a href="blog.html">BLOG <i class='bx bxs-down-arrow'></i></a>
                     <ul id="dropdown-menu">
-                        <li id="dropdown-item"><a href="articles/article1.html">Article 1</a></li>
-                        <li id="dropdown-item"><a href="articles/article2.html">Article 2</a></li>
-                        <li id="dropdown-item"><a href="articles/article3.html">Article 3</a></li>
-                        <li id="dropdown-item"><a href="articles/article4.html">Article 4</a></li>
-                        <li id="dropdown-item"><a href="articles/article5.html">Article 5</a></li>
+                        <li class="dropdown-item"><a href="articles/article1.html">Hyouka</a></li>
+                        <li class="dropdown-item"><a href="articles/article2.html">Classroom of The Elite</a></li>
+                        <li class="dropdown-item"><a href="articles/article3.html">Dandadan</a></li>
+                        <li class="dropdown-item"><a href="articles/article4.html">Les Carnets de l'Apothicaire</a></li>
+                        <li class="dropdown-item"><a href="articles/article5.html">Jojo's Bizarre Adventure</a></li>
                     </ul>
                 </li>
                 <li><a href="abonnez-vous.html">ABONNEZ-VOUS</a></li>
@@ -40,7 +40,7 @@
             </ul>
         </nav>
     </header>
-    <section id="container">
+    <div id="container">
         <section id="banniere" style="background-image: url('img/banniere-abonnement.gif');">
             <div>
                 <h2>Créer son propre compte</h2>
@@ -48,27 +48,27 @@
                     communauté ou de nouveaux articles arrivent !</p>
             </div>
         </section>
-        <section id="disposition">
+        <div id="disposition">
             <main id="main-form" class="width-66">
-                <form action="https://iut.widee.dev" method="post" enctype="multipart/form-data">
+                <form>
                     <h2>S'Inscrire au Blog</h2>
-                    <section>
+                    <div>
                         <div id="profil_sub_avatar">
-                            <input type="file" name="avatar" accept="image/png, image/jpeg" multiple="false"
+                            <input type="file" name="avatar" accept="image/png, image/jpeg"
                                 onchange="loadImage()">
                         </div>
                         <div>
                             <label for="name">Prénom</label>
                             <input class="input-background" type="text" name="name"
-                                id="name" class="input_style" placeholder="Name">
+                                id="name" placeholder="Name">
                         </div>
                         <div>
                             <label for="surname">Nom de famille</label>
                             <input type="text" name="surname" id="surname"
                                 class="input-background" placeholder="Surname">
                         </div>
-                    </section>
-                    <section>
+                    </div>
+                    <div>
                         <div>
                             <label for="email">Email</label>
                             <input type="email" name="email" id="email"
@@ -79,8 +79,8 @@
                             <input type="password" name="password" id="password"
                                 class="input-background" placeholder="Password">
                         </div>
-                    </section>
-                    <section>
+                    </div>
+                    <div>
                         <div class="form_section_aside">
                             <label for="date">Date de Naissance</label>
                             <input class="input-background" type="date" name="date" id="date">
@@ -89,17 +89,17 @@
                             <label for="sex">Genre</label>
                             <div>
                                 <input type="radio" id="sex" name="sex" value="man"> Homme
-                                <input type="radio" id="sex" name="sex" value="women"> Femme
-                                <input type="radio" id="sex" name="sex" value="other"> Non renseigné
+                                <input type="radio" name="sex" value="women"> Femme
+                                <input type="radio" name="sex" value="other"> Non renseigné
                             </div>
                         </div>
-                    </section>
-                    <section id="section_adresse_sub">
+                    </div>
+                    <div id="section_adresse_sub">
                         <label for="adresse">Adresse</label>
                         <input type="text" name="adresse" id="adresse"
                             class="input-background" placeholder="Adresse">
-                    </section>
-                    <section>
+                    </div>
+                    <div>
                         <div>
                             <label for="ville">Ville</label>
                             <input type="text" name="ville" id="ville"
@@ -110,8 +110,8 @@
                             <input type="text" name="code_postal" id="code_postal" maxlength="5" minlength="5"
                                 class="input-background" placeholder="Code Postal">
                         </div>
-                    </section>
-                    <section>
+                    </div>
+                    <div>
                         <div class="form_section_aside">
                             <label for="color">Couleur Preférée</label>
                             <input type="color" name="color" id="color">
@@ -120,11 +120,11 @@
                             <label for="loisir">Loisirs</label>
                             <div>
                                 <input type="checkbox" id="loisir" name="loisir" value="sport">Sport
-                                <input type="checkbox" id="loisir" name="loisir" value="litterature">Litterature
-                                <input type="checkbox" id="loisir" name="loisir" value="cinema">Cinema
+                                <input type="checkbox" name="loisir" value="litterature">Litterature
+                                <input type="checkbox" name="loisir" value="cinema">Cinema
                             </div>
                         </div>
-                    </section>
+                    </div>
                     <div id="div_btn_submit">
                         <div id="circle"></div>
                         <button type="submit" class="btn_envoi">Envoyer</button>
@@ -181,11 +181,11 @@
                     </li>
                 </ul>
             </aside>
-        </section>
-    </section>
+        </div>
+    </div>
     <footer>
         <section id="footer-container">
-            <section>
+            <div id="upper-footer-part">
                 <nav>
                     <h2>Contact Informations</h2>
                     <ul>
@@ -202,21 +202,27 @@
                     <h2>Nos Derniers Articles</h2>
                     <div>
                         <article>
-                            <img src="img/img1.jpg" alt="dernierarticle1">
-                            <h3>Hyouka</h3>
+                            <a href="articles/article1.html">
+                                <img src="../img/img1.jpg" alt="dernierarticle1">
+                                <h3>Hyouka</h3>
+                            </a>
                         </article>
                         <article>
-                            <img src="img/img2.jpg" alt="dernierarticle2">
-                            <h3>Classroom of The Elite</h3>
+                            <a href="articles/article2.html">
+                                <img src="../img/img2.jpg" alt="dernierarticle2">
+                                <h3>Classroom of The Elite</h3>
+                            </a>
                         </article>
                         <article>
-                            <img src="img/img3.jpg" alt="dernierarticle3">
-                            <h3>Dandadan</h3>
+                            <a href="articles/article3.html">
+                                <img src="../img/img3.jpg" alt="dernierarticle3">
+                                <h3>Dandadan</h3>
+                            </a>
                         </article>
                     </div>
                 </div>
-            </section>
-            <div>
+            </div>
+            <div id="lower-footer-part">
                 <p>&copy; Copyright 2A Année 2024 - 2025</p>
                 <ul>
                     <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
