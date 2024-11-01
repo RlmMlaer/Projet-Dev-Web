@@ -1299,6 +1299,14 @@ input[data-autocompleted] {
         object-position: center;
     }
 
+    aside>h2{
+        margin-top: 25px;
+    }
+
+    aside>ul>li>a>div{
+        width: 80%;
+    }
+
     footer>#footer-container>#upper-footer-part>div>div>article{
         width: 100%;
         height: 270px;
