@@ -1249,6 +1249,7 @@ input[data-autocompleted] {
     #main-classique>section,
     #main-classique>section>ul{
         gap: 15px;
+        width: 100%;
     }
 
     #main-accueil>section>a{
@@ -1267,6 +1268,11 @@ input[data-autocompleted] {
     footer>#footer-container>#lower-footer-part{
         flex-direction: column;
         gap: 10px;
+    }
+
+    #scroll-top{
+        font-size: 10px;
+        padding: 8px 9px;
     }
 }
 
@@ -1295,7 +1301,7 @@ input[data-autocompleted] {
 
     footer>#footer-container>#upper-footer-part>div>div>article{
         width: 100%;
-        height: 370px;
+        height: 270px;
     }
 }
 
