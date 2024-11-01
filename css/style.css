@@ -1303,8 +1303,14 @@ input[data-autocompleted] {
         margin-top: 25px;
     }
 
-    aside>ul>li>a>div{
-        width: 80%;
+    aside>ul:nth-of-type(2)>li>a{
+        flex-direction: column;
+    }
+
+    aside>ul:nth-of-type(2)>li>a>img,
+    aside>ul:nth-of-type(2)>li>a>div{
+        width: 100%;
+        text-align: justify;
     }
 
     footer>#footer-container>#upper-footer-part>div>div>article{
