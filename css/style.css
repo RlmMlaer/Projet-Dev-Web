@@ -1280,11 +1280,33 @@ input[data-autocompleted] {
     #main-classique>section>p,
     #main-classique>#informations>p,
     #main-classique>blockquote,
-    #main-classique>section>ul>li{
+    #main-classique>section>ul>li,
+    #main-classique>#article-section-personnage>.article-div-personnage>p,
+    #main-classique>section>.section-jojo>p {
         font-size: .9rem !important;
     }
 
-    #main-classique>section>.reference>img{
+    #main-classique>#article-section-personnage>.article-div-personnage>img{
+        width: 90px;
+        height: 90px;
+        margin: 0 10px 10px 0;
+    }
+
+    #main-classique>blockquote>div {
+        flex-direction: column-reverse;
+    }
+
+    #main-classique>blockquote>div>img,
+    #main-classique>blockquote>div>div {
+        width: 90%;
+    }
+
+    #main-classique>#article-section-personnage>.article-div-personnage{
+        margin-bottom: 15px;
+    }
+
+    #main-classique>section>.reference>img,
+    #main-classique>blockquote>div>img {
         height: 300px;
         object-position: center;
     }
@@ -1423,6 +1445,10 @@ input[data-autocompleted] {
         align-items: center;
     }
 
+    #main-blog {
+        margin-top: 3rem;
+    }
+
     #main-blog>.carousel-inner,
     #main-blog>.carousel-inner>.carousel-item>img {
         width: 400px;
@@ -1435,6 +1461,12 @@ input[data-autocompleted] {
 
     #main-blog>.carousel-inner>.carousel-item>.container>p {
         font-size: .6rem;
+    }
+
+    #main-classique>section>div>video, 
+    #main-classique>section>div>video[poster], 
+    #main-classique>section>div>video>source {
+        height: 300px;
     }
 
     aside>h2{
@@ -1465,11 +1497,11 @@ input[data-autocompleted] {
     }
 
     #main-blog>.carousel-inner>.slide-button#prev-slide {
-        left: 10px;
+        left: -7px;
     }
 
     #main-blog>.carousel-inner>.slide-button#next-slide {
-        right: 10px;
+        right: -7px;
     }
 }
 
