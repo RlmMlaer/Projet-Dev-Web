@@ -455,7 +455,8 @@ aside>ul>li>a>img {
     background-color: var(--font-color-hover);
 }
 
-#main-classique>section>table>thead>tr>th:nth-child(1) {
+#main-classique>section>table>thead>tr>th:nth-child(1),
+#main-classique>section>table>thead>tr>th:nth-child(5) {
     width: 10%;
 }
 
@@ -463,16 +464,9 @@ aside>ul>li>a>img {
     width: 30%;
 }
 
-#main-classique>section>table>thead>tr>th:nth-child(3) {
-    width: 25%;
-}
-
+#main-classique>section>table>thead>tr>th:nth-child(3),
 #main-classique>section>table>thead>tr>th:nth-child(4) {
     width: 25%;
-}
-
-#main-classique>section>table>thead>tr>th:nth-child(5) {
-    width: 10%;
 }
 
 #main-classique>section>table>thead>tr>th,
@@ -741,17 +735,16 @@ footer>#footer-container>#lower-footer-part>ul>li>a>i:hover {
 }
 
 #main-form>form>#section_adresse_sub {
+    gap: 0;
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
 }
 
-#main-form #section_adresse_sub label {
-    margin: 0;
-}
-
-#main-form #section_adresse_sub input {
-    width: 97%;
+#main-form>form>#section_adresse_sub>label,
+#main-form>form>div>div>label {
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .form_section_choice,
@@ -794,11 +787,6 @@ footer>#footer-container>#lower-footer-part>ul>li>a>i:hover {
     line-height: 1.5;
     max-width: fit-content;
     width: 100%;
-}
-
-#main-form form label {
-    margin-bottom: 10px;
-    font-size: 18px;
 }
 
 .input-background {
@@ -1087,6 +1075,12 @@ input[data-autocompleted] {
         height: auto;
         margin: auto;
     }
+    
+    #main-classique>section>table>thead>tr>th,
+    #main-classique>section>table>tbody>tr>td {
+        padding: 1.1rem;
+        font-size: .9rem;
+    }
 
     aside>h2{
         align-self: flex-start;
@@ -1253,11 +1247,28 @@ input[data-autocompleted] {
         width: 100%;
     }
 
+    #main-classique>section>table>thead>tr>th,
+    #main-classique>section>table>tbody>tr>td {
+        padding: 1rem;
+        font-size: .7rem;
+    }
+
+    #main-classique>section>table>thead>tr>th:nth-child(3),
+    #main-classique>section>table>thead>tr>th:nth-child(4) {
+        width: 20%;
+    }
+
+    #main-classique>section>table>thead>tr>th:nth-child(1),
+    #main-classique>section>table>thead>tr>th:nth-child(5) {
+        width: 15%;
+    }
+
     #main-accueil>section>a{
         height: 180px;
     }
 
-    #main-form>form>div>div>input {
+    #main-form>form>div>div>input,
+    #main-form>form>#section_adresse_sub>input {
         padding: 0 .75rem;
         font-size: 1rem;
     }
@@ -1267,7 +1278,8 @@ input[data-autocompleted] {
         font-size: 1rem;
     }
 
-    #main-form>form>div>#form_contact_sexe>div>input{
+    #main-form>form>div>#form_contact_sexe>div>input,
+    #main-form>form>div>.form_section_choice>div>input{
         width: .9rem;
     }
 
@@ -1292,6 +1304,11 @@ input[data-autocompleted] {
 }
 
 @media screen and (max-width: 600px){
+    #main-classique>section>table>thead>tr>th,
+    #main-classique>section>table>tbody>tr>td {
+        padding: .8rem;
+    }
+
     #main-accueil{
         gap: 10px;
     }
@@ -1308,6 +1325,10 @@ input[data-autocompleted] {
     #main-accueil>section:nth-child(2n)>div,
     #main-form>form>div>div {
         width: 100%;
+    }
+
+    #main-form>form>#section_adresse_sub>input{
+        width: 95%;
     }
 
     #main-accueil>section>a>img,
@@ -1337,12 +1358,12 @@ input[data-autocompleted] {
         margin-top: 25px;
     }
 
-    aside>ul:nth-of-type(2)>li>a{
+    aside>#nouveautes>li>a{
         flex-direction: column;
     }
 
-    aside>ul:nth-of-type(2)>li>a>img,
-    aside>ul:nth-of-type(2)>li>a>div{
+    aside>#nouveautes>li>a>img,
+    aside>#nouveautes>li>a>div{
         width: 100%;
         text-align: justify;
     }
