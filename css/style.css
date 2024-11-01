@@ -1217,7 +1217,8 @@ input[data-autocompleted] {
 
     #container>#banniere>div{
         width: fit-content;
-        margin: 1rem 0 0 1rem;
+        margin: 3.1rem 0 0 1rem;
+        padding: 1rem;
     }
 
     #container>#banniere>div>h2{
@@ -1233,8 +1234,13 @@ input[data-autocompleted] {
         height: 180px;
     }
 
+    footer>#footer-container>#upper-footer-part>nav>h2,
+    footer>#footer-container>#upper-footer-part>div>h2{
+        font-size: calc(1.125rem + 2.3vw);
+    }
+    
     footer>#footer-container>#upper-footer-part>nav>ul>li{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 
@@ -1264,6 +1270,10 @@ input[data-autocompleted] {
     footer>#footer-container>#upper-footer-part>div>div>article{
         width: 100%;
         height: 370px;
+    }
+    footer>#footer-container>#lower-footer-part{
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
