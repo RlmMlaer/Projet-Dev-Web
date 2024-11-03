@@ -27,17 +27,16 @@ body {
     background-color: var(--primary-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: "Times New Roman", serif;
 }
 
 .b-feature-color {
     color: var(--feature-color);
+}
+
+.italic-special-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .justify-align {
@@ -238,6 +237,18 @@ aside {
     opacity: 0;
     transform: translateX(30px);
     animation: apparition 0.8s 0.6s ease-out forwards;
+}
+
+#aside-main-blog,
+#aside-main-blog>ul {
+    width: 100% !important;
+    height: auto;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#aside-main-blog>h2 {
+    align-self: flex-start;
 }
 
 aside>#aside-infos-oeuvre{
@@ -742,6 +753,7 @@ footer>#footer-container>#lower-footer-part>ul>li>a>i:hover {
 }
 
 #main-form>form>#section_adresse_sub>label,
+#main-form>form>#form_section_message>label,
 #main-form>form>div>div>label {
     margin-bottom: 10px;
     font-size: 18px;
@@ -884,23 +896,30 @@ input[data-autocompleted] {
 /* Fin Mise en for Main-Form */
 
 /* Début de la mise en forme Carousel */
+#main-blog {
+    width: 100%;
+}
+
 #main-blog>.carousel-inner {
+    min-width: 100%;
+    max-width: 100%;
     display: flex;
-    width: 1320px;
     height: 700px;
-    margin: 3.5rem auto 3.5rem auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--font-color-hover);
+    margin: 0 auto 3.5rem auto;
     overflow: hidden;
 }
 
 #main-blog>.carousel-inner>.carousel-item {
-    width: 100%;
+    min-width: 100%;
     height: 100%;
 }
 
 #main-blog>.carousel-inner>.carousel-item>img {
     border-radius: 1rem;
     height: 700px;
-    width: 1320px;
+    width: 100%;
     object-fit: cover;
     object-position: top;
     filter: brightness(45%);
@@ -1062,11 +1081,6 @@ input[data-autocompleted] {
         width: 90%;
     }
 
-    #main-blog>.carousel-inner,
-    #main-blog>.carousel-inner>.carousel-item>img{
-        width: 1000px;
-    }
-
     #main-blog>.carousel-inner>.carousel-item>.container{
         width: 65%;
     }
@@ -1080,6 +1094,7 @@ input[data-autocompleted] {
     #main-accueil,
     #main-classique,
     #main-form,
+    #main-blog,
     aside,
     aside>ul{
         width: 100% !important;
@@ -1121,34 +1136,6 @@ input[data-autocompleted] {
     }
 }
 
-@media screen and (max-width:1120px) {
-    #main-blog>.carousel-inner,
-    #main-blog>.carousel-inner>.carousel-item>img {
-        width: 800px;
-        height: 500px;
-    }
-
-    #main-blog>.carousel-inner>.carousel-item>.container>p {
-        font-size: 1rem;
-    }
-
-    #main-blog>.carousel-inner>.carousel-item>.container>.btn-container>.learn-more>.circle{
-        width: 2.1rem;
-        height: 2.1rem;
-    }
-
-    #main-blog>.carousel-inner>.carousel-item>.container>.btn-container>.learn-more>.circle>.arrow {
-        font-size: 20px;
-    }
-
-    #main-blog>.carousel-inner>.carousel-item>.container>.btn-container>.learn-more>.button-text {
-        top: -5px;
-        left: -30px;
-        font-size: .8rem;
-    }
-
-}
-
 @media screen and (max-width: 960px) {
     #sidebarNav ul{
         font-size: 14px;
@@ -1157,15 +1144,15 @@ input[data-autocompleted] {
 
     #main-blog>.carousel-inner,
     #main-blog>.carousel-inner>.carousel-item>img {
-        width: 600px;
+        height: 500px;
     }
 
     #main-blog>.carousel-inner>.carousel-item>.container>h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     #main-blog>.carousel-inner>.carousel-item>.container>p {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
 }
@@ -1372,16 +1359,26 @@ input[data-autocompleted] {
         width: .9rem;
     }
 
-    #main-blog>.carousel-inner,
-    #main-blog>.carousel-inner>.carousel-item>img {
-        width: 500px;
-        height: 400px;
-    }
-
     #main-blog>.carousel-inner>.slide-button {
         width: 50px;
         height: 50px;
     }
+
+    #main-blog>.carousel-inner>.carousel-item>.container>.btn-container>.learn-more>.circle{
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+
+    #main-blog>.carousel-inner>.carousel-item>.container>.btn-container>.learn-more>.circle>.arrow {
+        font-size: 20px;
+    }
+
+    #main-blog>.carousel-inner>.carousel-item>.container>.btn-container>.learn-more>.button-text {
+        top: -5px;
+        left: -30px;
+        font-size: .8rem;
+    }
+
 
     footer>#footer-container>#upper-footer-part>nav>h2,
     footer>#footer-container>#upper-footer-part>div>h2{
@@ -1454,22 +1451,31 @@ input[data-autocompleted] {
         align-items: center;
     }
 
-    #main-blog {
-        margin-top: 3rem;
-    }
-
     #main-blog>.carousel-inner,
     #main-blog>.carousel-inner>.carousel-item>img {
-        width: 400px;
-        height: 300px;
+        margin-bottom: 0;
+        height: 400px;
     }
 
     #main-blog>.carousel-inner>.carousel-item>.container>h2 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
     }
 
     #main-blog>.carousel-inner>.carousel-item>.container>p {
-        font-size: .6rem;
+        font-size: .8rem;
+    }
+
+    #main-blog>.carousel-inner>.carousel-item>.container>.btn-container {
+        margin-top: 1rem;
+    }
+
+    #main-blog>.carousel-inner>.slide-button#prev-slide {
+        left: -7px;
+    }
+
+    #main-blog>.carousel-inner>.slide-button#next-slide {
+        right: -7px;
     }
 
     #main-classique>section>div>video, 
@@ -1495,22 +1501,6 @@ input[data-autocompleted] {
     footer>#footer-container>#upper-footer-part>div>div>article{
         width: 100%;
         height: 270px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #main-blog>.carousel-inner,
-    #main-blog>.carousel-inner>.carousel-item>img {
-        width: 350px;
-        height: 400px;
-    }
-
-    #main-blog>.carousel-inner>.slide-button#prev-slide {
-        left: -7px;
-    }
-
-    #main-blog>.carousel-inner>.slide-button#next-slide {
-        right: -7px;
     }
 }
 

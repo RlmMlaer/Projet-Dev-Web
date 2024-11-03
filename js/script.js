@@ -15,13 +15,6 @@ function scrollToTop(){
         behavior: 'smooth',
     });
 }
-window.addEventListener('scroll', () => {
-    var scrollTopButton = document.getElementById("scroll-top");
-    if (this.window.pageYOffset > 200)
-        scrollTopButton.style.display = 'block';
-    else
-        scrollTopButton.style.display = 'none';
-});
 
 var blog = document.getElementById("blog");
 blog.addEventListener("mouseenter", () => {
@@ -56,4 +49,77 @@ const initSlider = () => {
     carousel.addEventListener('scroll', () => {
         handleSlideButtons();
     });
+}
+
+window.addEventListener('scroll', () => {
+    var scrollTopButton = document.getElementById("scroll-top");
+    if (this.window.pageYOffset > 200)
+        scrollTopButton.style.display = 'block';
+    else
+        scrollTopButton.style.display = 'none';
+});
+
+function validationForm(){
+    const form = document.getElementsByTagName("form")[0];
+    var surname = document.getElementById("surname");
+    var name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var message = document.getElementById("message");
+
+    var emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    surname.setCustomValidity("Veuillez saisir votre nom.");
+    name.setCustomValidity("Veuillez saisir votre prénom.");
+    email.setCustomValidity("Veuillez entrer une adresse email valide.");
+    email.setCustomValidity("La longueur minimum de votre message doit être de 25 caractères.");
+
+    surname.addEventListener("keyup", () => {
+        if (surname.value.trim() == '')
+            surname.setCustomValidity("Veuillez saisir votre nom.");
+        else if (surname.value.length < 3)
+            surname.setCustomValidity("Votre nom doit contenir au moins 3 caractères.");
+        else
+            surname.setCustomValidity("");
+    })
+
+    name.addEventListener("keyup", () => {
+        if (name.value.trim() == '')
+            name.setCustomValidity("Veuillez saisir votre prénom.");
+        else if (name.value.length < 3)
+            name.setCustomValidity("Votre prénom doit contenir au moins 3 caractères.");
+        else
+            name.setCustomValidity("");
+    })
+
+    email.addEventListener("keyup", () => {
+        if (!emailRegExp.test(email) || email.value.length === 0)
+            email.setCustomValidity("Veuillez entrer une adresse email valide.");
+        else
+            email.setCustomValidity("");
+    })
+
+    message.addEventListener("keyup", () => {
+        if (message.value.length < 25)
+            email.setCustomValidity("La longueur minimum de votre message doit être de 25 caractères.");
+        else if (message.value.length > 1000)
+            email.setCustomValidity("La longueur de votre message ne doit pas dépasser 1000 caractères.");
+        else
+            email.setCustomValidity("");
+    })
+
+    form.addEventListener("submit", function(event) {
+        let errors = 0;
+
+        if (surname.value.trim() === '' || surname.value.length < 3)
+            errors++;
+        if (name.value.trim() === '' || surname.value.length < 3)
+            errors++;
+        if (!emailRegExp.test(email) || email.value.length === 0)
+            errors++;
+        if (message.value.length < 25 || message.value.length > 1000)
+            errors++;
+
+        if (errors > 0)
+            event.preventDefault();
+    })
 }

@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet Dev WEB 2A - Page de Contact</title>
 
+    <!-- Lien vers le favicon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
     <!-- Link to Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Lien vers le fichier CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="validationForm()">
     <header>
         <input type="checkbox" id="menu">
         <label id="burger" for="menu">
@@ -56,19 +58,19 @@
                         <div>
                             <label for="surname">Nom</label>
                             <input class="input-background" type="text" name="surname"
-                                id="surname" placeholder="Surname">
+                                id="surname" placeholder="Nom">
                         </div>
                         <div>
                             <label for="name">Prénom</label>
                             <input class="input-background" type="text" name="name"
-                                id="name" placeholder="Name">
+                                id="name" placeholder="Prénom">
                         </div>
                     </div>
                     <div>
                         <div>
                             <label for="email">Adresse Mail</label>
                             <input class="input-background" type="email" name="email"
-                                id="email" placeholder="name@example.com">
+                                id="email" placeholder="nom@exemple.com">
                         </div>
                         <div id="form_contact_sexe">
                             <label for="sex">Sexe</label>
@@ -82,7 +84,7 @@
                     <div id="form_section_message">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="20"
-                            cols="100" maxlength="1000"></textarea>
+                            cols="100" minlength="25" maxlength="1000"></textarea>
                     </div>
                     <div id="div_btn_submit">
                         <div id="circle"></div>
